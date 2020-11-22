@@ -1,0 +1,28 @@
+// === store.js ===
+import { writable } from "svelte/store";
+export const count = writable(0);
+
+// === Task.svelte ===
+<script>
+	import { count } from '../store';
+
+	const changeStore = () => {
+		count.update(value => {
+			return value += "Changed"
+		});
+	}
+</script>
+
+<main>
+	<button on:click={changeStore}>Change Store</button>
+</main>
+
+// === Solution.svelte ===
+<script>
+	import { count } from '../store';
+
+	count.subscribe(value => {
+		console.log(`Solution: Store value was changed on: ${value}`);
+	});
+</script>
+

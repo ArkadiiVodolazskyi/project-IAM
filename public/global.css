@@ -1,0 +1,21 @@
+html {
+  font-style: 16px;
+}
+
+.material-icons {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: top;
+  line-height: 0;
+  font-size: 1.3rem;
+}
+
+.container {
+  margin-top: 3rem;
+  border: 0.3rem solid teal;
+  -webkit-border-radius: 1.5rem;
+          border-radius: 1.5rem;
+  padding: 4rem 3.5rem;
+}
